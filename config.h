@@ -118,10 +118,10 @@ static const char *colorname[] = {
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
-	"gray90", /* default foreground colour */
-	"black", /* default background colour */
+	"#f8a9b4",
+	"#8FE1FF",
+	"#F0F0F0", /* default foreground colour */
+	"#1B2021", /* default background colour */
 };
 
 
@@ -340,8 +340,9 @@ static Key key[] = {
 	{ XK_Insert,        ShiftMask,      "\033[2;2~",    +1,    0},
 	{ XK_Insert,        ControlMask,    "\033[L",       -1,    0},
 	{ XK_Insert,        ControlMask,    "\033[2;5~",    +1,    0},
-	{ XK_Insert,        XK_ANY_MOD,     "\033[4h",      -1,    0},
-	{ XK_Insert,        XK_ANY_MOD,     "\033[2~",      +1,    0},
+	// { XK_Insert,        XK_ANY_MOD,     "\033[4h",      -1,    0}, Micro doesnt support this so im trying something out
+	// { XK_Insert,        XK_ANY_MOD,     "\033[2~",      +1,    0},
+    { XK_Insert,        XK_ANY_MOD,     "\033[2~",      -1,    0},
 	{ XK_Delete,        ControlMask,    "\033[M",       -1,    0},
 	{ XK_Delete,        ControlMask,    "\033[3;5~",    +1,    0},
 	{ XK_Delete,        ShiftMask,      "\033[2K",      -1,    0},
